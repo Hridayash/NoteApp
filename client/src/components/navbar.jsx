@@ -1,12 +1,13 @@
 import React from 'react';
-import  './comp.css';
-function Navbar(){
-    return(
-    <nav>
-       <h1>My Notes</h1>
-        
-    </nav>
-    );
-}
+
+
+const Navbar = ({ onLogout }) => {
+  return (
+    <div className='navbar'>
+      <h1>Notes App</h1>
+      <button onClick={onLogout}>Logout</button>
+    </div>
+  );
+};
 
 export default Navbar;
